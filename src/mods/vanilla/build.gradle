@@ -1,0 +1,46 @@
+plugins {
+  id 'java'
+}
+
+group = 'io.github.timestop34.timeindustry.vanilla'
+version = '1.0.0'
+
+java.sourceCompatibility = 21
+java.targetCompatibility = 21
+
+repositories {
+  mavenCentral()
+  // Если нужно добавить локальный репозиторий
+  flatDir {
+    dirs rootProject.file('shared/build/libs').path   // путь к папке с shared.jar
+  }
+}
+
+dependencies {
+  // Зависимость от shared модуля основной игры (предполагаем, что shared.jar уже собран)
+  implementation project(':src:shared')        // или implementation files('../../shared/build/libs/shared.jar')
+  // Если мод использует другие библиотеки (Gson, Ashley и т.д.) — они уже есть в shared, но можно добавить явно:
+  // implementation 'com.badlogicgames.gdx:gdx:1.14.0'
+  // implementation 'com.badlogicgames.ashley:ashley:1.7.4'
+}
+
+// Настройка JAR
+jar {
+  // Включить в JAR мета-информацию о моде (опционально)
+  manifest {
+    attributes(
+      'Mod-ID': project.name,
+      'Mod-Version': project.version
+    )
+  }
+  // Если нужно включить ресурсы (например, текстуры) — они лежат в src/main/resources
+  from sourceSets.main.resources
+}
+
+// Дополнительная задача: копировать готовый JAR в папку mods сервера
+tasks.register('copyToMods', Copy) {
+  dependsOn jar
+  from jar
+  into '../bin'   // или куда-то ещё, где сервер ищет моды
+}
+build.finalizedBy copyToMods

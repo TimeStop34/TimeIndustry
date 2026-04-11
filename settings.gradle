@@ -1,0 +1,20 @@
+rootProject.name = 'TimeIndustry'
+
+// Основные модули (лежат в src/)
+include 'src:shared'
+include 'src:core'
+include 'src:server'
+include 'src:lwjgl3'
+
+// Автоматически подключаем все подпапки в mods/src как модули
+def modsDir = file('src/mods')
+if (modsDir.exists() && modsDir.isDirectory()) {
+  modsDir.eachDir { dir ->
+    if (dir.name != 'bin') {   // или сравнивайте пути
+      include "src:mods:${dir.name}"
+    }
+  }
+}
+
+// Бинарники
+include "bin"

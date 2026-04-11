@@ -1,0 +1,47 @@
+// Функция для определения ОС
+def os = System.getProperty("os.name").toLowerCase()
+
+// Задача запуска клиента (из lwjgl3.jar)
+tasks.register('runClient', JavaExec) {
+    group = 'game'
+    description = 'Запускает клиент игры из скомпилированного JAR в bin/'
+    dependsOn 'distclean', 'game_build'    // или 'prepareToRun', если нужно только собрать
+
+    workingDir = rootProject.file('bin')
+    classpath = files("${workingDir}/${appName}-${projectVersion}.jar")   // имя JAR должно соответствовать
+    //mainClass = 'io.github.timestop34.timeindustry.lwjgl3.Lwjgl3Launcher'
+
+    // Аргументы JVM (как в lwjgl3)
+    jvmArgs += "--enable-native-access=ALL-UNNAMED"
+    if (os.contains('mac')) jvmArgs += "-XstartOnFirstThread"
+}
+
+// Задача запуска сервера (из server.jar)
+tasks.register('runServer', JavaExec) {
+    group = 'game'
+    description = 'Запускает сервер игры из скомпилированного JAR в bin/'
+    dependsOn 'distclean', 'game_build'
+
+    workingDir = rootProject.file('bin')
+    classpath = files("${workingDir}/${appName}-server-${projectVersion}.jar")
+    //mainClass = 'io.github.timestop34.timeindustry.server.ServerLauncher'
+    // для сервера дополнительные JVM-аргументы обычно не нужны, но можно добавить
+}
+
+// Задача для полной очистки проекта (включая бинарники)
+tasks.register('distclean') {
+    group = 'game'
+    description = 'Очищает все скомпилированные файлы (бинарники и моды)'
+    dependsOn 'clean'
+    doLast {
+        delete file('bin')
+        delete file('mods/bin')
+    }
+}
+
+// Задача для полной сборки (основные модули + моды) и копирования в bin
+tasks.register('game_build') {
+    group = 'game'
+    description = 'Собирает игру и моды, копирует JAR-файлы в bin/'
+    dependsOn ':prepareToRun'
+}

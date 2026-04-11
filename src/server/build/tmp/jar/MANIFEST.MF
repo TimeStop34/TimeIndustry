@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Main-Class: io.github.timestop34.timeindustry.server.ServerLauncher
+Enable-Native-Access: ALL-UNNAMED
+Multi-Release: true
+
