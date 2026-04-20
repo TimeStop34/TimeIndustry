@@ -89,7 +89,7 @@ public class LayerRegistry {
         int y = 0;
         for (String id : sortedIds) {
             LayerProperties prop = propsById.get(id);
-            Layer layer = new Layer(prop.getId(), prop.getName(), prop.getIconPath(), y++);
+            Layer layer = new Layer(prop.getId(), prop.getName(), prop.getIconPath(), y++, prop.isUnbreakable(), prop.isUnbuildable());
             LAYERS.put(id, layer);
         }
 

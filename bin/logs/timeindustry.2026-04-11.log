@@ -1,0 +1,488 @@
+17:58:22.343 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Loading mods...
+17:58:22.419 [HeadlessApplication] DEBUG i.g.t.timeindustry.mod.ModManager - Loaded mod: TimeIndustry Vanilla (vanilla v1.0)
+17:58:22.437 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Placed initial stone block at (10,10)
+17:58:22.438 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Server started on port 8080
+17:58:22.446 [WebSocketSelector-38] INFO  i.g.t.t.server.ServerNetworkManager - Server started on port: 8080
+17:58:28.364 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerNetworkManager - New client connected: /[0:0:0:0:0:0:0:1]:60730
+17:58:31.550 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 3,12 on layer vanilla:buildings
+17:58:31.551 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 3,12 (progress=0.0)
+17:58:32.540 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 3,12
+17:58:34.536 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 5,12 on layer vanilla:ground
+17:58:34.536 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 5,12 (progress=0.0)
+17:58:34.772 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 5,12
+17:58:35.536 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 4,12 on layer vanilla:ground
+17:58:35.536 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 4,12 (progress=0.0)
+17:58:35.772 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 4,12
+17:58:37.273 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 4,12 on layer vanilla:buildings
+17:58:37.273 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 4,12 (progress=0.0)
+17:58:38.272 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 4,12
+17:58:39.057 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 5,12 on layer vanilla:buildings
+17:58:39.057 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 5,12 (progress=0.0)
+17:58:40.072 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 5,12
+17:58:43.209 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 4,12 on layer vanilla:buildings
+17:58:44.019 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 5,12 on layer vanilla:buildings
+17:58:44.222 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block broken at 4,12
+17:58:44.608 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 3,12 on layer vanilla:buildings
+17:58:45.022 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block broken at 5,12
+17:58:45.519 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 4,12 on layer vanilla:ground
+17:58:45.605 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block broken at 3,12
+17:58:45.772 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block broken at 4,12
+17:58:45.919 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 5,12 on layer vanilla:ground
+17:58:46.172 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block broken at 5,12
+17:58:46.675 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 3,12 on layer vanilla:buildings
+17:58:46.675 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 3,12 (progress=0.0)
+17:58:47.175 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 4,11 on layer vanilla:buildings
+17:58:47.175 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 4,11 (progress=0.0)
+17:58:47.672 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 3,12
+17:58:47.696 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 5,11 on layer vanilla:buildings
+17:58:47.696 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 5,11 (progress=0.0)
+17:58:48.172 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 4,11
+17:58:48.198 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 5,10 on layer vanilla:buildings
+17:58:48.198 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 5,10 (progress=0.0)
+17:58:48.705 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 5,11
+17:58:48.726 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 3,10 on layer vanilla:buildings
+17:58:48.726 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 3,10 (progress=0.0)
+17:58:49.087 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 3,11 on layer vanilla:buildings
+17:58:49.087 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 3,11 (progress=0.0)
+17:58:49.205 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 5,10
+17:58:49.354 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 4,10 on layer vanilla:buildings
+17:58:49.354 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 4,10 (progress=0.0)
+17:58:49.739 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 3,10
+17:58:49.826 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Cannot place vanilla:stone at 4,11 on any layer
+17:58:50.072 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 3,11
+17:58:50.126 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 5,12 on layer vanilla:buildings
+17:58:50.126 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 5,12 (progress=0.0)
+17:58:50.339 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 4,10
+17:58:50.415 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 4,12 on layer vanilla:buildings
+17:58:50.415 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 4,12 (progress=0.0)
+17:58:51.139 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 5,12
+17:58:51.422 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 4,12
+17:58:52.510 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 6,11 on layer vanilla:ground
+17:58:52.510 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 6,11 (progress=0.0)
+17:58:52.755 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 6,11
+17:58:53.143 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 4,11 on layer vanilla:ground
+17:58:53.144 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 4,11 (progress=0.0)
+17:58:53.389 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 4,11
+17:58:55.530 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Cannot place vanilla:grass at 4,11 on any layer
+17:58:57.567 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Cannot place vanilla:stone at 4,11 on any layer
+17:58:58.194 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - No entity or process at 7,11
+17:58:58.472 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 6,11 on layer vanilla:ground
+17:58:58.738 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block broken at 6,11
+17:58:58.895 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 5,11 on layer vanilla:buildings
+17:58:59.195 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 4,11 on layer vanilla:buildings
+17:58:59.889 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 4,10 on layer vanilla:buildings
+17:58:59.905 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block broken at 5,11
+17:59:00.184 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 5,10 on layer vanilla:buildings
+17:59:00.205 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block broken at 4,11
+17:59:00.562 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 3,10 on layer vanilla:buildings
+17:59:00.867 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 3,11 on layer vanilla:buildings
+17:59:00.905 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block broken at 4,10
+17:59:01.128 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 3,12 on layer vanilla:buildings
+17:59:01.172 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block broken at 5,10
+17:59:01.423 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 5,12 on layer vanilla:buildings
+17:59:01.572 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block broken at 3,10
+17:59:01.855 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block broken at 3,11
+17:59:01.895 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 4,12 on layer vanilla:buildings
+17:59:02.122 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block broken at 3,12
+17:59:02.168 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 4,11 on layer vanilla:ground
+17:59:02.405 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block broken at 4,11
+17:59:02.422 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block broken at 5,12
+17:59:02.888 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block broken at 4,12
+17:59:03.507 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 7,10 on layer vanilla:buildings
+17:59:03.507 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 7,10 (progress=0.0)
+17:59:04.522 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 7,10
+17:59:05.841 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 7,11 on layer vanilla:buildings
+17:59:05.841 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 7,11 (progress=0.0)
+17:59:06.839 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 7,11
+17:59:08.802 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 8,10 on layer vanilla:ground
+17:59:08.803 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 8,10 (progress=0.0)
+17:59:09.055 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 8,10
+17:59:09.419 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 7,10 on layer vanilla:ground
+17:59:09.419 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 7,10 (progress=0.0)
+17:59:09.672 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 7,10
+17:59:11.631 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 7,11 on layer vanilla:ground
+17:59:11.631 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 7,11 (progress=0.0)
+17:59:11.889 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 7,11
+17:59:12.599 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 7,11 on layer vanilla:buildings
+17:59:13.064 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 7,10 on layer vanilla:buildings
+17:59:13.605 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block broken at 7,11
+17:59:14.055 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block broken at 7,10
+17:59:15.232 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 7,10 on layer vanilla:ground
+17:59:15.489 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block broken at 7,10
+17:59:17.543 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 8,10 on layer vanilla:buildings
+17:59:17.543 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 8,10 (progress=0.0)
+17:59:18.539 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 8,10
+17:59:19.160 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 8,10 on layer vanilla:buildings
+17:59:19.766 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 joined breaking process at 8,10 (progress=-0.59999406)
+17:59:20.172 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block broken at 8,10
+17:59:20.561 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 8,10 on layer vanilla:ground
+17:59:20.822 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block broken at 8,10
+17:59:22.016 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 7,10 on layer vanilla:ground
+17:59:22.017 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 7,10 (progress=0.0)
+17:59:22.272 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 7,10
+17:59:22.328 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 7,8 on layer vanilla:ground
+17:59:22.328 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 7,8 (progress=0.0)
+17:59:22.572 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 7,8
+17:59:22.883 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 7,9 on layer vanilla:ground
+17:59:22.883 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 7,9 (progress=0.0)
+17:59:23.122 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 7,9
+17:59:24.673 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 7,11 on layer vanilla:buildings
+17:59:24.673 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 7,11 (progress=0.0)
+17:59:24.974 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 7,10 on layer vanilla:buildings
+17:59:24.974 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 7,10 (progress=0.0)
+17:59:25.312 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 7,9 on layer vanilla:buildings
+17:59:25.312 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 7,9 (progress=0.0)
+17:59:25.601 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 7,8 on layer vanilla:buildings
+17:59:25.601 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 7,8 (progress=0.0)
+17:59:25.689 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 7,11
+17:59:25.989 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 7,10
+17:59:26.305 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 7,9
+17:59:26.589 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 7,8
+17:59:27.184 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Cannot place vanilla:grass at 7,9 on any layer
+17:59:29.607 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Cannot place vanilla:stone at 7,9 on any layer
+17:59:30.185 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 7,9 on layer vanilla:buildings
+17:59:30.646 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 7,8 on layer vanilla:buildings
+17:59:31.024 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 7,10 on layer vanilla:buildings
+17:59:31.172 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block broken at 7,9
+17:59:31.313 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 7,11 on layer vanilla:buildings
+17:59:31.552 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 joined breaking process at 7,11 (progress=-0.23330294)
+17:59:31.638 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block broken at 7,8
+17:59:31.746 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 joined breaking process at 7,10 (progress=-0.7166492)
+17:59:31.964 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 7,9 on layer vanilla:ground
+17:59:32.039 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block broken at 7,10
+17:59:32.152 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 7,8 on layer vanilla:ground
+17:59:32.222 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block broken at 7,9
+17:59:32.305 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block broken at 7,11
+17:59:32.352 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - No entity or process at 7,7
+17:59:32.389 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block broken at 7,8
+17:59:32.636 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 7,10 on layer vanilla:ground
+17:59:32.875 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 7,11 on layer vanilla:ground
+17:59:32.889 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block broken at 7,10
+17:59:33.138 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block broken at 7,11
+18:02:28.858 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 13,9 on layer vanilla:buildings
+18:02:28.859 [WebSocketWorker-26] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 13,9 (progress=0.0)
+18:02:29.488 [WebSocketSelector-38] INFO  i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 disconnected, removing from all processes
+18:02:29.488 [WebSocketSelector-38] DEBUG i.g.t.t.server.ServerLauncher - Process at (13,9) removed (no players left)
+18:28:06.563 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Loading mods...
+18:28:06.570 [HeadlessApplication] DEBUG i.g.t.timeindustry.mod.ModManager - Loaded mod: TimeIndustry Vanilla (vanilla v1.0)
+18:28:06.580 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Placed initial stone block at (10,10)
+18:28:06.580 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Server started on port 8080
+18:28:06.584 [WebSocketSelector-34] INFO  i.g.t.t.server.ServerNetworkManager - Server started on port: 8080
+18:28:19.205 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerNetworkManager - New client connected: /[0:0:0:0:0:0:0:1]:50398
+18:28:21.008 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 8,14 on layer vanilla:buildings
+18:28:21.009 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:50398 now building at 8,14 (progress=0.0)
+18:28:21.998 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 8,14 on layer vanilla:buildings
+18:28:24.116 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 9,14 on layer vanilla:ground
+18:28:24.116 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:50398 now building at 9,14 (progress=0.0)
+18:28:24.363 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 9,14 on layer vanilla:ground
+18:28:24.656 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 8,13 on layer vanilla:ground
+18:28:24.656 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:50398 now building at 8,13 (progress=0.0)
+18:28:24.897 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 8,13 on layer vanilla:ground
+18:28:24.984 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 9,13 on layer vanilla:ground
+18:28:24.984 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:50398 now building at 9,13 (progress=0.0)
+18:28:25.230 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 9,13 on layer vanilla:ground
+18:28:26.634 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Cannot break block at 9,13 (unbreakable layer or no block)
+18:28:26.879 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Cannot break block at 9,13 (unbreakable layer or no block)
+18:28:30.496 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 9,12 on layer vanilla:buildings
+18:28:30.496 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:50398 now building at 9,12 (progress=0.0)
+18:28:31.497 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 9,12 on layer vanilla:buildings
+18:28:36.681 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 9,13 on layer vanilla:buildings
+18:28:36.681 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:50398 now building at 9,13 (progress=0.0)
+18:28:37.680 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 9,13 on layer vanilla:buildings
+18:28:39.097 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 9,13 on layer vanilla:buildings
+18:28:39.965 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:50398 joined breaking process at 9,13 (progress=-0.86667097)
+18:28:40.249 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:50398 joined breaking process at 9,13 (progress=-1.0)
+18:28:40.465 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:50398 joined breaking process at 9,13 (progress=-1.0)
+18:28:50.369 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 10,13 on layer vanilla:buildings
+18:28:50.369 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:50398 now building at 10,13 (progress=0.0)
+18:28:51.363 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 10,13 on layer vanilla:buildings
+18:28:51.629 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:50398 joined breaking process at 9,13 (progress=-1.0)
+18:28:56.208 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 8,13 on layer vanilla:buildings
+18:28:56.208 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:50398 now building at 8,13 (progress=0.0)
+18:28:56.530 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 7,13 on layer vanilla:buildings
+18:28:56.530 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:50398 now building at 7,13 (progress=0.0)
+18:28:57.097 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 7,14 on layer vanilla:buildings
+18:28:57.097 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:50398 now building at 7,14 (progress=0.0)
+18:28:57.197 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 8,13 on layer vanilla:buildings
+18:28:57.530 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 7,13 on layer vanilla:buildings
+18:28:57.582 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Cannot place vanilla:stone at 8,14 on any layer
+18:28:57.941 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:50398 now building at 9,13 (progress=-1.0)
+18:28:58.097 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 7,14 on layer vanilla:buildings
+18:28:58.184 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:50398 now building at 9,13 (progress=-0.74997336)
+18:28:59.947 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 9,13 on layer vanilla:buildings
+18:29:00.604 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 9,13 on layer vanilla:buildings
+18:29:01.864 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:50398 now building at 9,13 (progress=-1.0)
+18:29:03.880 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 9,13 on layer vanilla:buildings
+18:29:05.237 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Cannot place vanilla:stone at 9,13 on any layer
+18:29:06.432 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Cannot place vanilla:stone at 9,13 on any layer
+18:29:07.199 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 9,13 on layer vanilla:buildings
+18:29:09.140 [WebSocketSelector-34] INFO  i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:50398 disconnected, removing from all processes
+18:29:09.140 [WebSocketSelector-34] DEBUG i.g.t.t.server.ServerLauncher - Process at (9,13) removed (no players left)
+18:29:55.654 [WebSocketWorker-23] DEBUG i.g.t.t.server.ServerNetworkManager - New client connected: /[0:0:0:0:0:0:0:1]:54890
+18:30:01.176 [WebSocketWorker-23] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 11,8 on layer vanilla:buildings
+18:30:01.176 [WebSocketWorker-23] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:54890 now building at 11,8 (progress=0.0)
+18:30:02.180 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 11,8 on layer vanilla:buildings
+18:30:03.256 [WebSocketWorker-23] DEBUG i.g.t.t.server.ServerLauncher - Cannot place vanilla:stone at 11,8 on any layer
+18:30:07.618 [WebSocketWorker-23] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 11,8 on layer vanilla:buildings
+18:30:09.830 [WebSocketWorker-23] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 8,10 on layer vanilla:buildings
+18:30:09.830 [WebSocketWorker-23] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:54890 now building at 8,10 (progress=0.0)
+18:30:10.352 [WebSocketWorker-23] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:54890 now building at 8,10 (progress=0.53334504)
+18:30:10.830 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 8,10 on layer vanilla:buildings
+18:30:12.435 [WebSocketWorker-23] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 7,10 on layer vanilla:buildings
+18:30:12.435 [WebSocketWorker-23] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:54890 now building at 7,10 (progress=0.0)
+18:30:13.447 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 7,10 on layer vanilla:buildings
+18:30:22.072 [WebSocketWorker-23] DEBUG i.g.t.t.server.ServerLauncher - Cannot place vanilla:stone at 8,10 on any layer
+18:30:24.107 [WebSocketWorker-23] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 8,10 on layer vanilla:ground
+18:30:24.107 [WebSocketWorker-23] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:54890 now building at 8,10 (progress=0.0)
+18:30:24.347 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 8,10 on layer vanilla:ground
+18:30:28.418 [WebSocketWorker-23] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 8,10 on layer vanilla:buildings
+18:30:32.222 [WebSocketWorker-23] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 7,10 on layer vanilla:buildings
+18:30:34.546 [WebSocketWorker-23] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:54890 now building at 7,10 (progress=-1.0)
+18:30:36.547 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 7,10 on layer vanilla:buildings
+18:30:38.057 [WebSocketWorker-23] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 7,10 on layer vanilla:buildings
+18:30:38.614 [WebSocketWorker-23] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:54890 joined breaking process at 8,10 (progress=-1.0)
+18:30:39.704 [WebSocketWorker-23] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:54890 joined breaking process at 8,10 (progress=-1.0)
+18:30:50.922 [WebSocketWorker-23] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 7,8 on layer vanilla:buildings
+18:30:50.922 [WebSocketWorker-23] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:54890 now building at 7,8 (progress=0.0)
+18:30:51.930 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 7,8 on layer vanilla:buildings
+18:30:56.507 [WebSocketWorker-23] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 8,7 on layer vanilla:ground
+18:30:56.507 [WebSocketWorker-23] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:54890 now building at 8,7 (progress=0.0)
+18:30:56.763 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 8,7 on layer vanilla:ground
+18:31:21.824 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Loading mods...
+18:31:21.831 [HeadlessApplication] DEBUG i.g.t.timeindustry.mod.ModManager - Loaded mod: TimeIndustry Vanilla (vanilla v1.0)
+18:31:21.843 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Placed initial stone block at (10,10)
+18:31:21.843 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Server started on port 8080
+18:31:21.849 [WebSocketSelector-34] INFO  i.g.t.t.server.ServerNetworkManager - Server started on port: 8080
+18:31:25.384 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Loading mods...
+18:31:25.391 [HeadlessApplication] DEBUG i.g.t.timeindustry.mod.ModManager - Loaded mod: TimeIndustry Vanilla (vanilla v1.0)
+18:31:25.402 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Placed initial stone block at (10,10)
+18:31:25.402 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Server started on port 8080
+18:31:25.411 [WebSocketSelector-34] INFO  i.g.t.t.server.ServerNetworkManager - Server started on port: 8080
+18:31:29.826 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerNetworkManager - New client connected: /[0:0:0:0:0:0:0:1]:33602
+18:31:31.559 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 3,10 on layer vanilla:ground
+18:31:31.559 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:33602 now building at 3,10 (progress=0.0)
+18:31:32.570 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 3,10 on layer vanilla:ground
+18:31:37.161 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Cannot place vanilla:stone at 3,10 on any layer
+18:31:43.766 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 3,11 on layer vanilla:ground
+18:31:43.766 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:33602 now building at 3,11 (progress=0.0)
+18:31:44.003 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 3,11 on layer vanilla:ground
+18:31:44.012 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Cannot place vanilla:grass at 3,10 on any layer
+18:31:44.540 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Cannot place vanilla:grass at 3,10 on any layer
+18:31:44.723 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Cannot place vanilla:grass at 3,10 on any layer
+18:31:45.115 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Cannot break block at 3,11 (unbreakable layer or no block)
+18:31:45.929 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 6,9 on layer vanilla:ground
+18:31:45.929 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:33602 now building at 6,9 (progress=0.0)
+18:31:46.169 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 6,9 on layer vanilla:ground
+18:31:46.552 [WebSocketSelector-34] INFO  i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:33602 disconnected, removing from all processes
+18:32:03.503 [WebSocketWorker-23] DEBUG i.g.t.t.server.ServerNetworkManager - New client connected: /[0:0:0:0:0:0:0:1]:39188
+18:32:05.597 [WebSocketWorker-23] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 4,9 on layer vanilla:ground
+18:32:05.597 [WebSocketWorker-23] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:39188 now building at 4,9 (progress=0.0)
+18:32:06.586 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 4,9 on layer vanilla:ground
+18:32:12.812 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Loading mods...
+18:32:12.820 [HeadlessApplication] DEBUG i.g.t.timeindustry.mod.ModManager - Loaded mod: TimeIndustry Vanilla (vanilla v1.0)
+18:32:12.837 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Placed initial stone block at (10,10)
+18:32:12.837 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Server started on port 8080
+18:32:12.844 [WebSocketSelector-34] INFO  i.g.t.t.server.ServerNetworkManager - Server started on port: 8080
+18:32:17.037 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerNetworkManager - New client connected: /[0:0:0:0:0:0:0:1]:60206
+18:32:19.436 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 8,9 on layer vanilla:ground
+18:32:19.436 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60206 now building at 8,9 (progress=0.0)
+18:32:20.423 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 8,9 on layer vanilla:ground
+18:32:22.615 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 11,9 on layer vanilla:ground
+18:32:22.615 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60206 now building at 11,9 (progress=0.0)
+18:32:22.854 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 11,9 on layer vanilla:ground
+18:32:23.804 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 11,9 on layer vanilla:buildings
+18:32:23.804 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60206 now building at 11,9 (progress=0.0)
+18:32:24.054 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 11,9 on layer vanilla:buildings
+18:32:25.835 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 11,9 on layer vanilla:buildings
+18:32:28.440 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - No entity or process at 10,7
+18:32:30.283 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - No entity or process at 10,7
+18:32:35.168 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60206 joined breaking process at 11,9 (progress=-1.0)
+18:32:35.601 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60206 joined breaking process at 11,9 (progress=-1.0)
+18:32:36.920 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - No entity or process at 7,9
+18:32:37.240 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Cannot break block at 8,9 (unbreakable layer or no block)
+18:32:37.551 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Cannot break block at 8,9 (unbreakable layer or no block)
+18:32:40.004 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 15,7 on layer vanilla:ground
+18:32:40.004 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60206 now building at 15,7 (progress=0.0)
+18:32:40.254 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 15,7 on layer vanilla:ground
+18:32:40.909 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Cannot break block at 15,7 (unbreakable layer or no block)
+18:32:47.042 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60206 now building at 11,9 (progress=-1.0)
+18:32:47.554 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 11,9 on layer vanilla:buildings
+18:33:14.871 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 11,9 on layer vanilla:buildings
+18:33:18.316 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Cannot break block at 8,9 (unbreakable layer or no block)
+18:33:20.344 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Cannot break block at 15,7 (unbreakable layer or no block)
+18:33:22.979 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Cannot place vanilla:stone at 11,9 on any layer
+18:33:24.723 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Cannot place vanilla:stone at 15,7 on any layer
+18:33:26.546 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Cannot place vanilla:stone at 8,9 on any layer
+18:33:31.436 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 8,9 on layer vanilla:buildings
+18:33:31.436 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60206 now building at 8,9 (progress=0.0)
+18:33:31.671 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 8,9 on layer vanilla:buildings
+18:33:32.519 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 8,9 on layer vanilla:buildings
+18:33:34.993 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60206 now building at 8,9 (progress=-1.0)
+18:33:35.488 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 8,9 on layer vanilla:buildings
+18:57:37.075 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60206 joined breaking process at 11,9 (progress=-1.0)
+18:57:37.403 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60206 joined breaking process at 11,9 (progress=-1.0)
+18:57:40.164 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 8,9 on layer vanilla:buildings
+18:57:45.676 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 7,6 on layer vanilla:ground
+18:57:45.677 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60206 now building at 7,6 (progress=0.0)
+18:57:45.921 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 7,6 on layer vanilla:ground
+18:57:46.352 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Cannot break block at 7,6 (unbreakable layer or no block)
+18:57:46.712 [WebSocketSelector-34] INFO  i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60206 disconnected, removing from all processes
+18:57:46.712 [WebSocketSelector-34] DEBUG i.g.t.t.server.ServerLauncher - Process at (11,9) removed (no players left)
+18:57:46.712 [WebSocketSelector-34] DEBUG i.g.t.t.server.ServerLauncher - Process at (8,9) removed (no players left)
+20:08:50.757 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Loading mods...
+20:08:50.764 [HeadlessApplication] DEBUG i.g.t.timeindustry.mod.ModManager - Loaded mod: TimeIndustry Vanilla (vanilla v1.0)
+20:08:50.773 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Placed initial stone block at (10,10)
+20:08:50.773 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Server started on port 8080
+20:08:50.778 [WebSocketSelector-34] INFO  i.g.t.t.server.ServerNetworkManager - Server started on port: 8080
+20:08:55.548 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerNetworkManager - New client connected: /[0:0:0:0:0:0:0:1]:48262
+20:08:59.805 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 6,11 on layer vanilla:ground
+20:08:59.805 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:48262 now building at 6,11 (progress=0.0)
+20:09:00.792 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 6,11 on layer vanilla:ground
+20:09:04.068 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 8,11 on layer vanilla:ground
+20:09:04.069 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:48262 now building at 8,11 (progress=0.0)
+20:09:04.307 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 8,11 on layer vanilla:ground
+20:09:04.859 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Cannot break block at 6,11 (unbreakable layer or no block)
+20:09:09.637 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - No entity or process at 7,11
+20:09:10.004 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 7,11 on layer vanilla:ground
+20:09:10.004 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:48262 now building at 7,11 (progress=0.0)
+20:09:10.240 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 7,11 on layer vanilla:ground
+20:09:12.298 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Cannot place vanilla:stone at 8,11 on any layer
+20:09:15.927 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 10,11 on layer vanilla:ground
+20:09:15.927 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:48262 now building at 10,11 (progress=0.0)
+20:09:16.173 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 10,11 on layer vanilla:ground
+20:09:39.171 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Cannot break block at 10,11 (unbreakable layer or no block)
+20:09:39.613 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Cannot break block at 8,11 (unbreakable layer or no block)
+20:09:40.094 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Cannot break block at 7,11 (unbreakable layer or no block)
+20:09:40.938 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Cannot break block at 6,11 (unbreakable layer or no block)
+20:09:52.019 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Cannot break block at 8,11 (unbreakable layer or no block)
+20:09:52.391 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Cannot break block at 6,11 (unbreakable layer or no block)
+20:23:30.329 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 6,9 on layer vanilla:ground
+20:23:30.336 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:48262 now building at 6,9 (progress=0.0)
+20:23:31.340 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 6,9 on layer vanilla:ground
+20:23:31.406 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerLauncher - Cannot break block at 6,9 (unbreakable layer or no block)
+20:23:31.893 [WebSocketSelector-34] INFO  i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:48262 disconnected, removing from all processes
+20:33:27.368 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Loading mods...
+20:33:27.374 [HeadlessApplication] DEBUG i.g.t.timeindustry.mod.ModManager - Loaded mod: TimeIndustry Vanilla (vanilla v1.0)
+20:33:27.385 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Placed initial stone block at (10,10)
+20:33:27.386 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Server started on port 8080
+20:33:27.398 [WebSocketSelector-34] INFO  i.g.t.t.server.ServerNetworkManager - Server started on port: 8080
+20:33:31.414 [WebSocketWorker-22] DEBUG i.g.t.t.server.ServerNetworkManager - New client connected: /[0:0:0:0:0:0:0:1]:55228
+20:33:33.704 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 9,9 on layer vanilla:ground
+20:33:33.705 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:55228 now building at 9,9 (progress=0.0)
+20:33:34.688 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 9,9 on layer vanilla:ground
+20:33:36.536 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 10,9 on layer vanilla:ground
+20:33:36.536 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:55228 now building at 10,9 (progress=0.0)
+20:33:36.769 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 10,9 on layer vanilla:ground
+20:33:38.336 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 9,8 on layer vanilla:ground
+20:33:38.336 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:55228 now building at 9,8 (progress=0.0)
+20:33:39.319 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 9,8 on layer vanilla:ground
+20:33:39.887 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Cannot break block at 9,8 (unbreakable layer or no block)
+20:33:43.203 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 10,8 on layer vanilla:ground
+20:33:43.203 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:55228 now building at 10,8 (progress=0.0)
+20:33:43.453 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 10,8 on layer vanilla:ground
+20:33:44.336 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 9,8 on layer vanilla:buildings
+20:33:44.336 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:55228 now building at 9,8 (progress=0.0)
+20:33:44.569 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 9,8 on layer vanilla:buildings
+20:33:45.253 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 9,8 on layer vanilla:buildings
+20:33:45.486 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block broken at 9,8 on layer vanilla:buildings
+20:33:46.269 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 9,8 on layer vanilla:buildings
+20:33:46.270 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:55228 now building at 9,8 (progress=0.0)
+20:33:46.503 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 9,8 on layer vanilla:buildings
+20:33:47.119 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 9,8 on layer vanilla:buildings
+20:33:47.353 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block broken at 9,8 on layer vanilla:buildings
+20:33:49.619 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 9,12 on layer vanilla:ground
+20:33:49.620 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:55228 now building at 9,12 (progress=0.0)
+20:33:50.619 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 9,12 on layer vanilla:ground
+20:33:51.653 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Cannot break block at 9,12 (unbreakable layer or no block)
+20:33:53.136 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Cannot break block at 10,9 (unbreakable layer or no block)
+20:33:55.003 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 9,11 on layer vanilla:ground
+20:33:55.003 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:55228 now building at 9,11 (progress=0.0)
+20:33:56.003 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 9,11 on layer vanilla:ground
+20:33:56.569 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 9,12 on layer vanilla:buildings
+20:33:56.569 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:55228 now building at 9,12 (progress=0.0)
+20:33:56.803 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 9,12 on layer vanilla:buildings
+20:33:58.619 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 9,9 on layer vanilla:buildings
+20:33:58.619 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:55228 now building at 9,9 (progress=0.0)
+20:33:58.853 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 9,9 on layer vanilla:buildings
+20:33:59.319 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 11,10 on layer vanilla:ground
+20:33:59.320 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:55228 now building at 11,10 (progress=0.0)
+20:33:59.569 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 11,10 on layer vanilla:ground
+20:34:00.219 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 11,10 on layer vanilla:buildings
+20:34:00.220 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:55228 now building at 11,10 (progress=0.0)
+20:34:00.453 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 11,10 on layer vanilla:buildings
+20:34:01.070 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 9,11 on layer vanilla:buildings
+20:34:01.071 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:55228 now building at 9,11 (progress=0.0)
+20:34:01.319 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 9,11 on layer vanilla:buildings
+20:34:02.186 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:55228 disconnected, removing from all processes
+20:34:26.308 [WebSocketWorker-23] DEBUG i.g.t.t.server.ServerNetworkManager - New client connected: /[0:0:0:0:0:0:0:1]:49170
+20:34:27.236 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Cannot place vanilla:stone at 11,10 on any layer
+20:34:29.486 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 10,11 on layer vanilla:ground
+20:34:29.486 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:49170 now building at 10,11 (progress=0.0)
+20:34:29.719 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 10,11 on layer vanilla:ground
+20:34:30.703 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 10,10 on layer vanilla:ground
+20:34:30.703 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:49170 now building at 10,10 (progress=0.0)
+20:34:30.936 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 10,10 on layer vanilla:ground
+20:34:31.536 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 9,10 on layer vanilla:ground
+20:34:31.536 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:49170 now building at 9,10 (progress=0.0)
+20:34:31.769 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 9,10 on layer vanilla:ground
+20:34:32.036 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 7,10 on layer vanilla:ground
+20:34:32.036 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:49170 now building at 7,10 (progress=0.0)
+20:34:32.269 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 7,10 on layer vanilla:ground
+20:34:32.903 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 5,9 on layer vanilla:ground
+20:34:32.903 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:49170 now building at 5,9 (progress=0.0)
+20:34:33.136 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 5,9 on layer vanilla:ground
+20:34:34.719 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Cannot place vanilla:stone at 9,9 on any layer
+20:34:35.069 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 8,8 on layer vanilla:ground
+20:34:35.070 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:49170 now building at 8,8 (progress=0.0)
+20:34:35.636 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 9,7 on layer vanilla:ground
+20:34:35.636 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:49170 now building at 9,7 (progress=0.0)
+20:34:36.069 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 12,5 on layer vanilla:ground
+20:34:36.070 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:49170 now building at 12,5 (progress=0.0)
+20:34:36.070 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 8,8 on layer vanilla:ground
+20:34:36.619 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 9,7 on layer vanilla:ground
+20:34:37.053 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:stone built at 12,5 on layer vanilla:ground
+20:34:39.019 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:49170 disconnected, removing from all processes
+20:35:06.276 [WebSocketWorker-24] DEBUG i.g.t.t.server.ServerNetworkManager - New client connected: /[0:0:0:0:0:0:0:1]:60730
+20:35:08.686 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 6,9 on layer vanilla:ground
+20:35:08.687 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 6,9 (progress=0.0)
+20:35:08.919 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 6,9 on layer vanilla:ground
+20:35:09.553 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 7,7 on layer vanilla:ground
+20:35:09.553 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 7,7 (progress=0.0)
+20:35:09.803 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 7,7 on layer vanilla:ground
+20:35:10.169 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 8,8 on layer vanilla:buildings
+20:35:10.170 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 8,8 (progress=0.0)
+20:35:10.403 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 8,8 on layer vanilla:buildings
+20:35:10.903 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 9,8 on layer vanilla:buildings
+20:35:10.903 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 9,8 (progress=0.0)
+20:35:11.136 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 9,8 on layer vanilla:buildings
+21:33:49.103 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 9,7 on layer vanilla:buildings
+21:33:49.103 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 9,7 (progress=0.0)
+21:33:49.353 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 9,7 on layer vanilla:buildings
+21:33:49.620 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Cannot place vanilla:grass at 9,8 on any layer
+21:33:50.470 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 9,7 on layer vanilla:buildings
+21:33:50.703 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block broken at 9,7 on layer vanilla:buildings
+21:33:50.870 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 9,9 on layer vanilla:buildings
+21:33:51.103 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block broken at 9,9 on layer vanilla:buildings
+21:33:51.420 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Started new breaking process at 9,8 on layer vanilla:buildings
+21:33:51.670 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block broken at 9,8 on layer vanilla:buildings
+21:33:51.736 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Cannot break block at 10,8 (unbreakable layer or no block)
+21:33:51.986 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Cannot break block at 10,10 (unbreakable layer or no block)
+21:33:52.236 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Cannot break block at 10,9 (unbreakable layer or no block)
+21:33:52.453 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Cannot break block at 10,8 (unbreakable layer or no block)
+21:33:52.886 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Created new build process at 7,7 on layer vanilla:buildings
+21:33:52.886 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 now building at 7,7 (progress=0.0)
+21:33:53.136 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Block vanilla:grass built at 7,7 on layer vanilla:buildings
+21:33:55.170 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - No entity or process at 7,15
+21:33:56.570 [HeadlessApplication] INFO  i.g.t.t.server.ServerLauncher - Player /[0:0:0:0:0:0:0:1]:60730 disconnected, removing from all processes
+21:49:46.343 [WebSocketWorker-25] DEBUG i.g.t.t.server.ServerNetworkManager - New client connected: /[0:0:0:0:0:0:0:1]:60578
+21:49:47.686 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Cannot break block at 12,5 (unbreakable layer or no block)
+21:49:48.070 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Cannot break block at 10,8 (unbreakable layer or no block)
+21:49:48.303 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Cannot break block at 10,8 (unbreakable layer or no block)
+21:49:48.536 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Cannot break block at 10,9 (unbreakable layer or no block)
+21:49:48.770 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Cannot break block at 10,10 (unbreakable layer or no block)
+21:49:48.986 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Cannot break block at 10,11 (unbreakable layer or no block)
+21:49:49.170 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - No entity or process at 8,11
+21:49:49.353 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - No entity or process at 8,11
+21:49:49.570 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - Cannot break block at 10,11 (unbreakable layer or no block)
+21:49:50.003 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - No entity or process at 7,8
+21:49:50.236 [HeadlessApplication] DEBUG i.g.t.t.server.ServerLauncher - No entity or process at 6,7

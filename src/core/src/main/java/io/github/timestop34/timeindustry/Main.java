@@ -8,6 +8,7 @@ import com.badlogic.gdx.graphics.Pixmap;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
 import com.badlogic.gdx.scenes.scene2d.ui.*;
 import com.badlogic.gdx.scenes.scene2d.utils.Drawable;
@@ -115,6 +116,30 @@ public class Main extends Game {
         ScrollPane.ScrollPaneStyle scrollStyle = new ScrollPane.ScrollPaneStyle();
         // По умолчанию скроллбары отключены, но можно настроить
         skin.add("default", scrollStyle);
+
+        // ---------- Стиль для кнопок паузы ----------
+        Pixmap pauseBgPixmap = new Pixmap(1, 1, Pixmap.Format.RGBA8888);
+        pauseBgPixmap.setColor(0f, 0f, 0f, 0.68f); // black 68%
+        pauseBgPixmap.fill();
+        Texture pauseBgTexture = new Texture(pauseBgPixmap);
+        pauseBgPixmap.dispose();
+
+        Pixmap pauseBorderPixmap = new Pixmap(1, 1, Pixmap.Format.RGBA8888);
+        pauseBorderPixmap.setColor(0f, 0f, 0f, 1f); // black
+        pauseBorderPixmap.fill();
+        Texture pauseBorderTexture = new Texture(pauseBorderPixmap);
+        pauseBorderPixmap.dispose();
+
+        Drawable pauseUp = new TextureRegionDrawable(new TextureRegion(pauseBgTexture));
+        Drawable pauseDown = new TextureRegionDrawable(new TextureRegion(pauseBorderTexture)); // при нажатии можно затемнить
+
+        TextButton.TextButtonStyle pauseStyle = new TextButton.TextButtonStyle();
+        pauseStyle.up = pauseUp;
+        pauseStyle.down = pauseDown;
+        pauseStyle.font = defaultFont;
+        pauseStyle.fontColor = Color.WHITE;
+        pauseStyle.over = pauseUp; // можно сделать чуть светлее при желании
+        skin.add("pause-button", pauseStyle);
 
         return skin;
     }
