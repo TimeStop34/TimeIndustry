@@ -28,9 +28,9 @@ public class NetworkSystem extends EntitySystem implements NetworkListener {
     private static final float SNAPSHOT_DELAY = 0.1f;
     private final Gson gson = new Gson();
     private List<ConstructionProcess> processes; // только для сервера
-    private List<WorldSnapshot.ProcessData> lastProcesses = new ArrayList<>();
+    private List<ProcessSnapshot.ProcessData> lastProcesses = new ArrayList<>();
 
-    public List<WorldSnapshot.ProcessData> getLastProcesses() {
+    public List<ProcessSnapshot.ProcessData> getLastProcesses() {
         return lastProcesses;
     }
 
@@ -71,7 +71,7 @@ public class NetworkSystem extends EntitySystem implements NetworkListener {
 
     public void sendWorldSnapshot() {
         if (!isServer) return;
-        WorldSnapshot snapshot = new WorldSnapshot();
+        WorldSnapshot worldSnapshot = new WorldSnapshot();
         ImmutableArray<Entity> entities = engine.getEntitiesFor(
                 Family.all(PositionComponent.class, SizeComponent.class, BlockDefinitionComponent.class).get());
         for (Entity entity : entities) {
@@ -86,11 +86,12 @@ public class NetworkSystem extends EntitySystem implements NetworkListener {
             data.blockId = def.blockId;
             LayerComponent layerComp = entity.getComponent(LayerComponent.class);
             data.layerId = layerComp.layerId;
-            snapshot.blocks.add(data);
+            worldSnapshot.blocks.add(data);
         }
+        ProcessSnapshot processSnapshot = new ProcessSnapshot();
         if (processes != null) {
             for (ConstructionProcess p : processes) {
-                WorldSnapshot.ProcessData pd = new WorldSnapshot.ProcessData();
+                ProcessSnapshot.ProcessData pd = new ProcessSnapshot.ProcessData();
                 pd.x = p.x;
                 pd.y = p.y;
                 pd.blockId = p.blockId;
@@ -99,10 +100,16 @@ public class NetworkSystem extends EntitySystem implements NetworkListener {
                 pd.layerId = p.layerId;
                 pd.progress = p.progress;
                 pd.isBuilding = p.progress > 0;
-                snapshot.processes.add(pd);
+                processSnapshot.processes.add(pd);
             }
         }
+
+        WorldStateSnapshot snapshot = new WorldStateSnapshot();
+        snapshot.processes = processSnapshot;
+        snapshot.world = worldSnapshot;
+
         WorldSnapshotMessage msg = new WorldSnapshotMessage();
+
         msg.snapshot = snapshot;
         String json = gson.toJson(msg);
         networkManager.sendMessage(json);
@@ -113,11 +120,11 @@ public class NetworkSystem extends EntitySystem implements NetworkListener {
             BaseMessage base = gson.fromJson(message, BaseMessage.class);
             if (base != null && base.type != null) {
                 if (isServer && commandHandler != null) {
-                    commandHandler.handleCommand(id, base, message);
+                    Gdx.app.postRunnable(() -> commandHandler.handleCommand(id, base, message));
                 } else if (!isServer) {
                     if ("snapshot".equals(base.type)) {
                         WorldSnapshotMessage msg = gson.fromJson(message, WorldSnapshotMessage.class);
-                        if (msg != null && msg.snapshot != null && msg.snapshot.blocks != null) {
+                        if (msg != null && msg.snapshot != null && msg.snapshot.world.blocks != null && msg.snapshot.processes.processes != null) {
                             updateLocalWorld(msg.snapshot);
                         } else {
                             logger.warn("Received empty or invalid snapshot");
@@ -131,13 +138,13 @@ public class NetworkSystem extends EntitySystem implements NetworkListener {
         }
     }
 
-    private void updateLocalWorld(WorldSnapshot snapshot) {
+    private void updateLocalWorld(WorldStateSnapshot snapshot) {
         ImmutableArray<Entity> entities = engine.getEntitiesFor(
                 Family.all(PositionComponent.class, SizeComponent.class, BlockDefinitionComponent.class).get());
         for (Entity entity : entities) {
             engine.removeEntity(entity);
         }
-        for (WorldSnapshot.BlockData data : snapshot.blocks) {
+        for (WorldSnapshot.BlockData data : snapshot.world.blocks) {
             Entity entity = engine.createEntity();
             entity.add(new PositionComponent(data.x, data.y));
             entity.add(new SizeComponent(data.width, data.height));
@@ -146,8 +153,8 @@ public class NetworkSystem extends EntitySystem implements NetworkListener {
             engine.addEntity(entity);
         }
         // Сохраняем процессы для отрисовки
-        if (snapshot.processes != null) {
-            lastProcesses = snapshot.processes;
+        if (snapshot.processes.processes != null) {
+            lastProcesses = snapshot.processes.processes;
         } else {
             lastProcesses.clear();
         }
@@ -178,7 +185,7 @@ public class NetworkSystem extends EntitySystem implements NetworkListener {
     @Override
     public void onPlayerDisconnected(String playerId) {
         if (isServer && serverEventListener != null) {
-            serverEventListener.onPlayerDisconnected(playerId);
+            Gdx.app.postRunnable(() -> serverEventListener.onPlayerDisconnected(playerId));
         }
     }
 }

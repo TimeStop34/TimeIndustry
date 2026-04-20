@@ -17,6 +17,7 @@ import io.github.timestop34.timeindustry.components.BlockDefinitionComponent;
 import io.github.timestop34.timeindustry.components.LayerComponent;
 import io.github.timestop34.timeindustry.components.PositionComponent;
 import io.github.timestop34.timeindustry.components.SizeComponent;
+import io.github.timestop34.timeindustry.network.ProcessSnapshot;
 import io.github.timestop34.timeindustry.network.WorldSnapshot;
 import io.github.timestop34.timeindustry.world.block.Block;
 import io.github.timestop34.timeindustry.world.registry.BlockRegistry;
@@ -42,7 +43,7 @@ public class RenderSystem extends EntitySystem {
 
     private static final Logger logger = LoggerFactory.getLogger(RenderSystem.class);
 
-    private List<WorldSnapshot.ProcessData> processes = new ArrayList<>();
+    private List<ProcessSnapshot.ProcessData> processes = new ArrayList<>();
 
     public RenderSystem(SpriteBatch batch) {
         this.batch = batch;
@@ -53,7 +54,7 @@ public class RenderSystem extends EntitySystem {
         shapeRenderer = new ShapeRenderer();
     }
 
-    public void setProcesses(List<WorldSnapshot.ProcessData> processes) {
+    public void setProcesses(List<ProcessSnapshot.ProcessData> processes) {
         this.processes = processes != null ? processes : new ArrayList<>();
     }
 
@@ -92,6 +93,23 @@ public class RenderSystem extends EntitySystem {
             List<Entity> layerEntities = entitiesByLayer.get(layer.id());
             if (layerEntities == null) continue;
 
+            for (ProcessSnapshot.ProcessData p : processes) {
+                if (p.progress > 0 && p.layerId.equals(layer.id())) {
+                    Block block = BlockRegistry.get(p.blockId);
+                    if (block == null) continue;
+                    Texture texture = TextureCache.getTexture(block.getTexturePath());
+                    float x = p.x * TILE_SIZE;
+                    float y = p.y * TILE_SIZE;
+                    float w = p.width * TILE_SIZE;
+                    float h = p.height * TILE_SIZE;
+                    float health = (p.progress + 1f) / 2f;
+                    batch.setColor(1f, 1f, 1f, health);
+                    batch.draw(texture, x, y, w, h);
+                }
+            }
+
+            batch.setColor(Color.WHITE);
+
             for (Entity entity : layerEntities) {
                 PositionComponent pos = entity.getComponent(PositionComponent.class);
                 SizeComponent size = entity.getComponent(SizeComponent.class);
@@ -106,16 +124,6 @@ public class RenderSystem extends EntitySystem {
                 float w = size.width * TILE_SIZE;
                 float h = size.height * TILE_SIZE;
 
-                // Ищем процесс для этого блока (по координатам и слою)
-                WorldSnapshot.ProcessData process = findProcessAt(pos.tileX, pos.tileY, layer.id());
-
-                if (process != null) {
-                    float health = (process.progress + 1f) / 2f;
-                    batch.setColor(1f, 1f, 1f, health);
-                } else {
-                    batch.setColor(Color.WHITE);
-                }
-
                 batch.draw(texture, x, y, w, h);
             }
         }
@@ -127,7 +135,7 @@ public class RenderSystem extends EntitySystem {
             shapeRenderer.setProjectionMatrix(camera.combined);
             shapeRenderer.begin(ShapeRenderer.ShapeType.Line);
 
-            for (WorldSnapshot.ProcessData p : processes) {
+            for (ProcessSnapshot.ProcessData p : processes) {
                 float x = p.x * TILE_SIZE;
                 float y = p.y * TILE_SIZE;
                 float w = p.width * TILE_SIZE;
@@ -140,16 +148,6 @@ public class RenderSystem extends EntitySystem {
             shapeRenderer.end();
             Gdx.gl.glDisable(GL20.GL_BLEND);
         }
-    }
-
-    // Обновлённый метод поиска процесса (теперь учитывает слой)
-    private WorldSnapshot.ProcessData findProcessAt(int x, int y, String layerId) {
-        for (WorldSnapshot.ProcessData p : processes) {
-            if (p.x == x && p.y == y && p.layerId.equals(layerId)) {
-                return p;
-            }
-        }
-        return null;
     }
 
     public void dispose() {

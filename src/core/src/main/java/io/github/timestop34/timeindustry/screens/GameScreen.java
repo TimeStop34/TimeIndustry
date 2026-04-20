@@ -15,6 +15,7 @@ import io.github.timestop34.timeindustry.network.messages.StartBuildingCommand;
 import io.github.timestop34.timeindustry.network.messages.StartBreakingCommand;
 import io.github.timestop34.timeindustry.systems.RenderSystem;
 import io.github.timestop34.timeindustry.ui.BlockSelectionUI;
+import io.github.timestop34.timeindustry.ui.PauseOverlay;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -27,6 +28,7 @@ public class GameScreen implements Screen, InputProcessor {
     private OrthographicCamera camera;
     private BlockSelectionUI blockUI;
     private InputMultiplexer inputMultiplexer;
+    private PauseOverlay pauseOverlay;
 
     private boolean leftPressed, rightPressed, upPressed, downPressed;
 
@@ -56,19 +58,20 @@ public class GameScreen implements Screen, InputProcessor {
         inputMultiplexer.addProcessor(this);
         Gdx.input.setInputProcessor(inputMultiplexer);
 
+        pauseOverlay = new PauseOverlay(skin, this::onPauseResume);
+
         logger.debug("GameScreen shown");
+    }
+
+    private void onPauseResume() {
+        // Игра продолжается
+        Gdx.input.setInputProcessor(inputMultiplexer);
     }
 
     @Override
     public void render(float delta) {
-        // Движение камеры
-        float moveX = 0, moveY = 0;
-        if (leftPressed) moveX -= RenderSystem.CAMERA_SPEED * delta;
-        if (rightPressed) moveX += RenderSystem.CAMERA_SPEED * delta;
-        if (downPressed) moveY -= RenderSystem.CAMERA_SPEED * delta;
-        if (upPressed) moveY += RenderSystem.CAMERA_SPEED * delta;
-        renderSystem.camera.position.x += moveX;
-        renderSystem.camera.position.y += moveY;
+
+        pauseOverlay.render();
 
         renderSystem.setProcesses(netSystem.getLastProcesses());
 
@@ -76,13 +79,24 @@ public class GameScreen implements Screen, InputProcessor {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         game.getEngine().update(delta);
 
-        blockUI.render();
+        if (!pauseOverlay.isVisible()) {
+            blockUI.render();
+            // Движение камеры
+            float moveX = 0, moveY = 0;
+            if (leftPressed) moveX -= RenderSystem.CAMERA_SPEED * delta;
+            if (rightPressed) moveX += RenderSystem.CAMERA_SPEED * delta;
+            if (downPressed) moveY -= RenderSystem.CAMERA_SPEED * delta;
+            if (upPressed) moveY += RenderSystem.CAMERA_SPEED * delta;
+            renderSystem.camera.position.x += moveX;
+            renderSystem.camera.position.y += moveY;
+        }
     }
 
     @Override
     public void resize(int width, int height) {
         renderSystem.resize(width, height);
         blockUI.resize(width, height);
+        pauseOverlay.resize(width, height);
     }
 
     @Override
@@ -122,13 +136,37 @@ public class GameScreen implements Screen, InputProcessor {
 
     @Override
     public boolean keyDown(int keycode) {
-        switch (keycode) {
-            case Input.Keys.A: leftPressed = true; return true;
-            case Input.Keys.D: rightPressed = true; return true;
-            case Input.Keys.W: upPressed = true; return true;
-            case Input.Keys.S: downPressed = true; return true;
+        if (keycode == Input.Keys.ESCAPE) {
+            if (pauseOverlay.isVisible()) {
+                pauseOverlay.hide();
+                onPauseResume();
+            } else {
+                pauseOverlay.show();
+                // Приостановка ввода игры
+                Gdx.input.setInputProcessor(pauseOverlay.getStage());
+            }
+            return true;
         }
-        return false;
+
+        return switch (keycode) {
+            case Input.Keys.A -> {
+                leftPressed = true;
+                yield true;
+            }
+            case Input.Keys.D -> {
+                rightPressed = true;
+                yield true;
+            }
+            case Input.Keys.W -> {
+                upPressed = true;
+                yield true;
+            }
+            case Input.Keys.S -> {
+                downPressed = true;
+                yield true;
+            }
+            default -> false;
+        };
     }
 
     @Override
@@ -159,5 +197,6 @@ public class GameScreen implements Screen, InputProcessor {
         Gdx.input.setInputProcessor(null);
         if (renderSystem != null) renderSystem.dispose();
         if (blockUI != null) blockUI.dispose();
+        if (pauseOverlay != null) pauseOverlay.dispose();
     }
 }

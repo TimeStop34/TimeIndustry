@@ -30,7 +30,8 @@ public class TileWorld {
     public boolean canPlace(Block def, int x, int y, String layerId) {
         Layer layer = LayerRegistry.get(layerId);
         if (layer == null) return false;
-        if (!def.getProperties().isAllowedOn(layer)) return false; // нужно добавить в BlockProperties метод isAllowedOn(Layer)
+        if (layer.unbuildable()) return false;                     // <-- ДОБАВИТЬ
+        if (!def.getProperties().isAllowedOn(layer)) return false;
 
         Entity[][] grid = layerGrids.get(layerId);
         for (int dx = 0; dx < def.getProperties().getWidth(); dx++) {
@@ -63,15 +64,19 @@ public class TileWorld {
         }
     }
 
-    public void breakBlock(int x, int y) {
-        // Ищем сверху вниз (или снизу вверх — зависит от геймплея)
+    public boolean breakBlock(int x, int y) {
         List<Layer> layers = LayerRegistry.getSortedLayers();
-        // Проходим от верхнего слоя к нижнему (обычно верхние слои перекрывают нижние)
+        // Ищем самый верхний слой с блоком
         for (int i = layers.size() - 1; i >= 0; i--) {
             Layer layer = layers.get(i);
             Entity[][] grid = layerGrids.get(layer.id());
             Entity entity = grid[x][y];
             if (entity != null) {
+                // Нашли блок — если слой нерушимый, ничего не делаем
+                if (layer.unbreakable()) {
+                    return false;
+                }
+                // Иначе удаляем блок
                 PositionComponent pos = entity.getComponent(PositionComponent.class);
                 SizeComponent size = entity.getComponent(SizeComponent.class);
                 if (pos != null && size != null) {
@@ -83,16 +88,35 @@ public class TileWorld {
                     }
                 }
                 engine.removeEntity(entity);
-                return;
+                return true;
             }
         }
+        return false;
     }
+
 
     public Entity getEntityAt(int x, int y) {
         List<Layer> layers = LayerRegistry.getSortedLayers();
         for (int i = layers.size() - 1; i >= 0; i--) {
             Entity[][] grid = layerGrids.get(layers.get(i).id());
             if (grid[x][y] != null) return grid[x][y];
+        }
+        return null;
+    }
+
+    public Entity getBreakableEntityAt(int x, int y) {
+        List<Layer> layers = LayerRegistry.getSortedLayers();
+        for (int i = layers.size() - 1; i >= 0; i--) {
+            Layer layer = layers.get(i);
+            Entity[][] grid = layerGrids.get(layer.id());
+            Entity entity = grid[x][y];
+            if (entity != null) {
+                // Если верхний блок на нерушимом слое — ломать нельзя
+                if (layer.unbreakable()) {
+                    return null;
+                }
+                return entity;
+            }
         }
         return null;
     }

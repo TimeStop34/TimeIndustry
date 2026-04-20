@@ -13,6 +13,7 @@ import com.badlogic.gdx.scenes.scene2d.utils.Drawable;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
+import io.github.timestop34.timeindustry.utils.TextureCache;
 import io.github.timestop34.timeindustry.world.block.Block;
 import io.github.timestop34.timeindustry.world.registry.BlockRegistry;
 import io.github.timestop34.timeindustry.world.block.Category;
@@ -135,10 +136,8 @@ public class BlockSelectionUI {
 
     private Drawable loadDrawable(String path) {
         try {
-            if (Gdx.files.internal(path).exists()) {
-                Texture texture = new Texture(Gdx.files.internal(path));
-                return new TextureRegionDrawable(new TextureRegion(texture));
-            }
+            Texture texture = TextureCache.getTexture(path);
+            return new TextureRegionDrawable(new TextureRegion(texture));
         } catch (Exception e) {
             logger.warn("Failed to load texture: {}", path);
         }

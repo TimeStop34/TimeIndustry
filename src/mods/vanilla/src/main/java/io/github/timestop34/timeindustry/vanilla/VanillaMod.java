@@ -25,7 +25,7 @@ public class VanillaMod implements ModInitializer {
                         .name("Stone")
                         .texture("stone")
                         .buildTime(2.0f)
-                        .allowedLayers("vanilla:buildings")
+                        .allowedLayers("vanilla:ground")
         );
         blocksCat.addBlock(stone);
         ctx.blocks.register("stone", stone);
@@ -36,7 +36,7 @@ public class VanillaMod implements ModInitializer {
                         .texture("grass")
                         .solid(false)
                         .buildTime(0.5f)
-                        .allowedLayers("vanilla:ground")
+                        .allowedLayers("vanilla:ground", "vanilla:buildings")
         );
         blocksCat.addBlock(grass);
         ctx.blocks.register("grass", grass);
